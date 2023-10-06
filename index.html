@@ -1,293 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W3CSS Template</title>
-    <!-- <link rel="shortcut icon" href="./assets/img/Logo/hg.png"> -->
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a1/Man_Utd_FC_.svg/1024px-Man_Utd_FC_.svg.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./assets/css/stytle.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV IT</title>
+  <link rel="icon" href="./assets/img/avata.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/reponsive.css">
+  <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.4.2-web/css/all.min.css">
 </head>
-<style>
-    /* 
-        PC: >= 1024px
-        Tablet: >= 740px & 1024px
-        Mobile:< 740px
-     */
-</style>
 
 <body>
-
-    <div id="main">
-         <!-- 1. Thanh tab đầu trang mục lục -->
-        <div id="header">
-            <!-- ul#nav>li*5>a tab 1 cái -->
-            <!-- Begin: Nav -->
-            <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#band">Band</a></li>
-                <li><a href="#tour">Tour</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <a href="#"> 
-                        More 
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="#">Merchandise</a></li>
-                        <li><a href="#">Extras</a></li>
-                        <li><a href="#">Media</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- End: Nav -->
-
-            <!-- Mobile menu button -->
-            <div id="mobile-menu" class="mobile-menu-btn">
-                <i class="menu-icon ti-menu"></i>
-            </div>
-
-            <!-- Search button -->
-            <div class="search-btn">
-                <i class="search-icon ti-search"></i>
-            </div>
+  <!-- html cho toàn page -->
+  <div class="main">
+    <!-- cho phần header -->
+    <div class="main_header">
+      <div class="hea_profile">
+        <img src="./assets/img/avata.png" alt="" class="hea-ava">
+        <div class="profile-text">
+          <p class="text--name">NGUYEN VAN KHOA</p>
+          <p class="text--content">Backend-End Deverloper (JAVA)</p>
+          <p class="text--icon">
+            <a href="https://github.com/khoane03" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/nv.khoa.2k3" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </p>
         </div>
+      </div>
+      <div class="hea_info">
+        <p class="title hide">Thông tin cá nhân</p>
+        <li class="header--list"><i class="fa-solid fa-location-arrow"></i>Hà Nội</li>
+        <li class="header--list"><i class="fa-solid fa-phone"></i>0987429725</li>
+        <li class="header--list"><i class="fa-solid fa-envelope"></i>khoatk4444@gmail.com</li>
+      </div>
 
-        <div id="slider">
-            <div class="text-content">
-                <h2 class="text-heading">New York</h2>
-                <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
-            </div>
-        </div>
-
-        <div id="content">
-            <!-- About section -->
-            <div id="band" class="content-section">
-                 <h2 class="section-heading">ENGLISH</h2>
-                 <p class="section-sub-heading">Better English - Better Future</p>
-                 <p class="about-text">
-                    Connect with us TODAY to start receiving the language learning and assessment resources you need directly to your newsfeed and inbox.Would you like to take part in research activities and share your views with other teachers? Join Oxford English Learning Exchange!What's new for the Oxford 3000? Find out by reading the Oxford 3000 and Oxford 5000 position paper, or get tips on using the word lists and download a FREE lesson plan.
-                 </p>
-
-                 <div class="row members-list">
-                     <!-- 1 -->
-                     <div class="col col-third s-col-full mt-32 text-center">
-                         <p class="member-name">Name</p>
-                         <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
-                     </div>
-                     <!-- 2 -->
-                     <div class="col col-third s-col-full mt-32 text-center">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
-                    </div>
-                    <!-- 3 -->
-                    <div class="col col-third s-col-full mt-32 text-center">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
-                    </div>
-                 </div>
-
-            </div>
-
-            <!-- Tour section -->
-            <div id="tour" class="tour-section">
-                <div class="content-section">
-                    <h2 class="section-heading text-white">TOUR DATES</h2>
-                    <p class="section-sub-heading text-white">Remember to book your tickets!</p>
-                    <!-- Ticket -->
-                    <ul class="tickets-list">
-                        <li>September <span class="sold-out">Sold out</span></li>
-                        <li>October <span class="sold-out">Sold out</span></li>
-                        <li>November <span class="quantity">3</span></li>
-                    </ul>
-
-                    <!-- Places -->
-                    <div class="row places-list">
-                        <div class="col col-third s-col-full mt-16">
-                            <img src="./assets/img/places/place1.jpg" alt="New York" class="place-img">
-                            <div class="place-body">
-                                <h3 class="place-heading">New York</h3>
-                                <p class="place-time">Fri 27 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn s-full-width js-buy-ticket">Buy Tickets</button>
-                            </div>
-                        </div>
-                        <div class="col col-third s-col-full mt-16">
-                            <img src="./assets/img/places/place2.jpg" alt="Paris" class="place-img">
-                            <div class="place-body">
-                                <h3 class="place-heading">Paris</h3>
-                                <p class="place-time">Sat 28 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn s-full-width js-buy-ticket">Buy Tickets</button>
-                            </div>
-                        </div>
-                        <div class="col col-third s-col-full mt-16">
-                            <img src="./assets/img/places/place3.jpg" alt="San Francisco" class="place-img">
-                            <div class="place-body">
-                                <h3 class="place-heading">New York</h3>
-                                <p class="place-time">Sun 29 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn s-full-width js-buy-ticket">Buy Tickets</button>
-                            </div>
-                        </div>                      
-                    </div>
-               </div>
-            </div> 
-
-            
-           <!-- Begin: Contact section -->
-           <div id="contact" class="content-section">
-                <h2 class="section-heading">CONTACT</h2>
-                <p class="section-sub-heading">Fan? Drop a note!</p>
-
-                <div class="row contact-content">
-                    <div class="col col-half s-col-full contact-info">
-                        <p><i class="ti-location-pin"></i> Chicago, US </p>
-                        <p><i class="ti-mobile"></i> Phone: <a href="tell:+00 151515">+00 151515</a> </p>
-                        <p><i class="ti-email"></i> Email: <a href="mailto: gianghoang@mail.com"> gianghoang@mail.com</a> </p>
-                    </div>
-                    <div class="col col-half s-col-full contact-form">
-                        <form action="">
-                            <div class="row">
-                                <div class="col col-half s-col-full">
-                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
-                                </div>
-                                <div class="col col-half s-col-full s-mt-8">
-                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row mt-8">
-                                <div class="col col-full">
-                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
-                                </div>
-                            </div>
-                            <input class="contact-submit-btn btn pull-right mt-16 s-full-width" type="submit" value="SEND">
-                        </form>
-                    </div>
-                </div>
-            </div>
-           <!-- End: Contact section -->
-
-           <div class="map-section">
-            <img src="./assets/img/map/map.jpg" alt="Map">
-           </div>
-
-        </div>
-        <!-- Link đính kèm -->
-        <div id="footer">
-            <div class="social-list">
-                <a href="https://www.facebook.com/Kensiro03/" target="_blank"><i class="ti-facebook"></i></a>
-                <a href="https://www.instagram.com/hoanggiangg_15.5/" target="_blank" ><i class="ti-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCKIiF1KGorVSeyqcrV36fUA" target="_blank"><i class="ti-youtube"></i></a>
-                <a href=""><i class="ti-pinterest"></i></a>
-                <a href=""><i class="ti-twitter"></i></a>
-                <a href=""><i class="ti-linkedin"></i></a>
-            </div>
-            <p class="copyright">Powered by <a href="https://www.w3schools.com/" target="_blank">w3.css</a></p>
-        </div>
     </div>
-
-    <!-- Modal: làm phần đăng kí vé -->
-    <div class="modal js-modal">
-        <div class="modal-container js-modal-container">
-            <div class="modal-close js-modal-close">
-                <i class="ti-close"></i>
-            </div>
-            <!-- Header -->
-            <header class="modal-header">
-                <i class="modal-heading-icon ti-bag"></i>
-                Tickets
-            </header>
-            <!-- Body -->
-            <div class="modal-body">
-                <label for="ticket-quantity" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
-
-                <label for="ticket-email" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send to
-                </label>
-                <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email...">
-
-                <button id="buy-tickets">
-                    Pay <i class="ti-check"></i>
-                </button>
-            </div>
-
-            <footer class="modal-footer">
-                <p class="modal-help">Need <a href="">help?</a></p>
-            </footer>
+    <!-- Khối các thông tin -->
+    <div class="container">
+      <!-- Học vấn -->
+      <div class="main--content item1">
+        <p class="title">HỌC VẤN</p>
+        <div class="box">
+          <div class="main--date">
+            <span class="main--year span-style ">2021</span>
+            <i class="fa-solid fa-arrow-down"></i>
+            <span class="main--today span-style">Hiện Tại</span>
+          </div>
+          <div class="main--university">
+            <a class="main--link list-style" href="https://humg.edu.vn/Pages/home.aspx" target="_blank">Đại Học
+              Mỏ Địa Chất</a>
+            <p class="main--university2 space-line">Chuyên Ngành : Công Nghệ Phần Mềm <br> Đang Học
+            </p>
+          </div>
         </div>
+      </div>
+      <!-- Mục tiêu -->
+      <div class="main--target item2">
+        <p class="title">MỤC TIÊU NGHỀ NGHIỆP</p>
+        <div class="contents">
+          <span class="span-style"><b>Mục tiêu ngắn hạn</b></span>
+          <li class="li-style"><i class="fa-solid fa-check"></i> Hoàn thành chương trình học với bằng tốt nghiệp loại
+            giỏi.</li>
+          <li class="li-style"><i class="fa-solid fa-check"></i> Nắm vũng kiến thức Front End, Java Backend-End, MySQL.
+          </li>
+          <span class="span-style"> <b>Mục tiêu dài hạn</b></span>
+          <li class="li-style"><i class="fa-solid fa-check"></i> Trở thành lập trình viên FullStack</li>
+          <li class="li-style"><i class="fa-solid fa-check"></i> Tiếng anh thành thạo</li>
+          <li class="li-style"><i class="fa-solid fa-check"></i> Job lương cao</li>
+        </div>
+      </div>
+      <!-- hoạt động -->
+      <div class="main--work item3">
+        <p class="title">HOẠT ĐỘNG</p>
+        <div class="box">
+          <div class="main--date2">
+            <span class="main--year span-style ">2020</span>
+            <i class="fa-solid fa-arrow-down"></i>
+            <span class="main--today span-style">Hiện Tại</span>
+          </div>
+          <!-- khoá học -->
+          <div class="main--course">
+            <span><b>Hoàn thành một số khoá học:</b></span>
+            <li class="li-style"><i class="fa-solid fa-check"></i> <a class="list-style main--codelearn" href="https://codelearn.io/learning/java-co-ban#" target="_blank">codelearn</a>
+            </li>
+            <li class="li-style"><i class="fa-solid fa-check"></i> <a href="#" class="list-style main--w3" target="_blank">w3school</a>
+            </li>
+            <li class="li-style"><i class="fa-solid fa-check"></i> <a href="#" class="list-style">F8 FullStack </a>
+            </li>
+          </div>
+        </div>
+
+      </div>
+      <!-- kỹ năng -->
+      <div class="main__skill item4">
+        <p class="title">KỸ NĂNG</p>
+        <div class="contents">
+          <li class="main--listskill li-style"><i class="fa-solid fa-check"></i> HTML, CSS, JAVASCRIPT</li>
+          <li class="main--listskill li-style"><i class="fa-solid fa-check"></i> Java, C++ </li>
+          <li class="main--listskill li-style"><i class="fa-solid fa-check"></i> SQL</li>
+        </div>
+      </div>
+      <!-- kinh nghiệm -->
+      <div class="main--experience item5">
+        <p class="title">KINH NGHIỆM</p>
+        <div class="contents">
+          <li class="main--listex li-style"><i class="fa-solid fa-check"></i> Tham gia một số dự án. </li>
+          <li class="main--listex li-style"><i class="fa-solid fa-check"></i> Tự tạo Project của mình. </li>
+          <li class="main--listex li-style"><i class="fa-solid fa-check"></i> Chưa được tham gia Project thực tế.</li>
+        </div>
+      </div>
+      <div class="main--hobby item6">
+        <p class="title ">SỞ THÍCH</p>
+        <div class="contents">
+          <li class="main--listhobby li-style"><i class="fa-solid fa-check"></i> Đọc sách</li>
+          <li class="main--listhobby li-style"><i class="fa-solid fa-check"></i> Nghe nhạc</li>
+          <li class="main--listhobby li-style"><i class="fa-solid fa-check"></i> Code</li>
+
+        </div>
+      </div>
+      <!-- ưu điểm -->
+      <div class="main--advantage item7">
+        <p class="title ">ƯU ĐIỂM</p>
+        <div class="contents">
+          <li class="main--listadv li-style"><i class="fa-solid fa-check"></i> Hoà đồng với mọi người.</li>
+          <li class="main--listadv li-style"><i class="fa-solid fa-check"></i> Có khả năng tự học tự tìm tài liệu.</li>
+          <li class="main--listadv li-style"><i class="fa-solid fa-check"></i> Có kỹ năng làm TeamWork.</li>
+        </div>
+      </div>
+      <!-- công cuj -->
+      <div class="main--tools item8">
+        <p class="title ">CÔNG CỤ</p>
+        <div class="contents">
+          <span class="span-style"><b>Thành thạo các công cụ:</b></span>
+          <li class="main--nametool li-style"><i class="fa-solid fa-check"></i> Vs Code, IntelliJ</li>
+          <li class="main--nametool li-style"><i class="fa-solid fa-check"></i> Sql Sever, Docker</li>
+          <li class="main--nametool li-style"><i class="fa-solid fa-check"></i> Git, Github</li>
+        </div>
+      </div>
+
     </div>
-<!-- Java-script mua vé -->
-<script>
-    const buyBtns = document.querySelectorAll('.js-buy-ticket')
-    const modal = document.querySelector('.js-modal')
-    const modalContainer = document.querySelector('.js-modal-container')
-    const modalClose = document.querySelector('.js-modal-close')
+  </div>
 
 
-    // Hàm hiển thị modal mua vé - thêm class open vào modal
-    function showBuyTickets() {
-        modal.classList.add('open')
-    }
-    // Hàm ẩn modal mua vé - gỡ bỏ class open của modal
-    function hideBuyTickets() {
-        modal.classList.remove('open')
-    }
 
-    // Lặp qua từng thẻ button và nghe hành vi click
-    for (const buyBtn of buyBtns) {
-        buyBtn.addEventListener('click', showBuyTickets )
-    }
-
-    // Nghe hành vi click vào button close
-    modalClose.addEventListener('click', hideBuyTickets)
-
-    modal.addEventListener('click', hideBuyTickets)
-
-    modalContainer.addEventListener('click', function(event) {
-        event.stopPropagation()
-    })
-</script>
-
-<!-- Mobile-menu đóng/mở -->
-    <script>
-        var header = document.getElementById('header');
-        var mobileMenu = document.getElementById('mobile-menu');
-        var headerHeight = header.clientHeight;
-        
-        mobileMenu.onclick = function() {
-            // alert('THONG BAO'); // hàm thông báo
-            var isClosed = header.clientHeight === headerHeight;
-            if (isClosed) {
-                header.style.height = 'auto';
-            }else {
-                header.style.height = null;
-            }
-        }
-
-        // Tự động đóng khi chọn menu
-        var menuItems = document.querySelectorAll('#nav li a[href *= "#"]');
-        for (var i = 0; i < menuItems.length; i++) {
-            var menuItem = menuItems[i];
-            
-
-            menuItem.onclick = function(event) {
-                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
-                if (isParentMenu) {
-                    event.preventDefault();
-                } else {
-                    header.style.height = null; 
-                }
-            }
-        }
-    </script>
 </body>
 </html>
